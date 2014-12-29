@@ -18,8 +18,7 @@ Dockerfile to build a squid image.
 If you find this image useful here's how you can help:
 
 - Send a Pull Request with your awesome new features and bug fixes
-- Help new users with [Issues](https://github.com/sameersbn/docker-squid/issues) they may encounter
-- Send me a tip via [Bitcoin](https://www.coinbase.com/sameersbn) or using [Gratipay](https://gratipay.com/sameersbn/)
+- Help new users with [Issues](https://github.com/uaperson/docker-squid/issues) they may encounter
 
 # Reporting Issues
 
@@ -54,13 +53,13 @@ In your issue report please make sure you provide the following information:
 Pull the latest version of the image from the docker index. This is the recommended method of installation as it is easier to update image in the future. These builds are performed by the **Docker Trusted Build** service.
 
 ```bash
-docker pull sameersbn/squid:latest
+docker pull wannabe/squid:latest
 ```
 
 Alternately you can build the image locally.
 
 ```bash
-git clone https://github.com/sameersbn/docker-squid.git
+git clone https://github.com/uaperson/docker-squid.git
 cd docker-squid
 docker build --tag="$USER/squid" .
 ```
@@ -71,7 +70,7 @@ Run the image
 
 ```bash
 docker run --name='squid' -it --rm -p 3128:3128 \
-  sameersbn/squid:latest
+  uaperson/squid:latest
 ```
 
 You now have a squid proxy server listening on port 3128. Just configure your browser / applications to use the proxy and your good to go.
